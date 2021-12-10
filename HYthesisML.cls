@@ -47,14 +47,6 @@
 \DeclareOption{alko-line}{\def\track{alko-line}}
 \DeclareOption{nodes-line}{\def\track{nodes-line}}
 \DeclareOption{bio-line}{\def\track{bio-line}}
-%- should some of these be removed? TM2021
-% \DeclareOption{sw-line-2017}{\def\track{sw-line-2017}}
-% \DeclareOption{alko-line-2017}{\def\track{alko-line-2017}}
-% \DeclareOption{nodes-line-2017}{\def\track{nodes-line-2017}}
-% \DeclareOption{bio-line-2017}{\def\track{bio-line-2017}}
-% \DeclareOption{sw-track-2018}{\def\track{sw-track-2018}}
-% \DeclareOption{alko-track-2018}{\def\track{alko-track-2018}}
-% \DeclareOption{nodes-track-2018}{\def\track{nodes-track-2018}}
 \DeclareOption{software-track-2020}{\def\track{software-track-2020}}
 \DeclareOption{algorithms-track-2020}{\def\track{algorithms-track-2020}}
 \DeclareOption{networking-track-2020}{\def\track{networking-track-2020}}
@@ -588,26 +580,26 @@
 \setcounter{page}{-998}
 \label{in}
 \thispagestyle{empty}
-% \if@censored 
-%  {
-%     \par
-%     {\bf\supervisorslabel}\par
-% %TM: parindent only indents the first line -> use \leftskip within {}
-% %    {\addtolength{\parindent}{2em} 
-%     {\leftskip=2em
-%      \@supervisors
-%   %  \addtolength{\parindent}{-2em}}
-%      \par
-%     }
+\if@censored 
+ {
+     \par
+     {\bf\supervisorslabel}\par
+ %TM: parindent only indents the first line -> use \leftskip within {}
+ %    {\addtolength{\parindent}{2em} 
+     {\leftskip=2em
+      \@supervisors
+   %  \addtolength{\parindent}{-2em}}
+      \par
+     }
     
-%     \par
-%     {\bf\examinerlabel}\par
-%     {\leftskip=2em
-%      \@examiners
-%      \par
-%     }
-% }
-% \fi
+     \par
+     {\bf\examinerlabel}\par
+     {\leftskip=2em
+      \@examiners
+      \par
+     }
+}
+\fi
 
 \vspace{4.0cm}
     \par
