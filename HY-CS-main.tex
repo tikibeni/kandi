@@ -4,13 +4,6 @@
 %% STEP 1: Choose options for MSc / BSc / seminar layout and your bibliographic style
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%  Language: 
-%%      finnish, swedish, or english
-%%  Pagination (use twoside by default)  
-%%      oneside or twoside,
-%%  Study programme / kind of report
-%%      tkt = Bachelor's thesis in Computer Science Bachelor's Programme;
-
 \documentclass[finnish,twoside,censored,tkt]{HYthesisML} 
 
 % If wanted, open new chapters only at right page.
@@ -78,32 +71,24 @@
 %% STEP 2:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Set up personal information for the title page and the abstract form.
-%% Replace parameters with your information.
 \title{Ketterän ohjelmistokehitysryhmän hallinnalliset haasteet}
-
 \author{Benjamin Blinnikka}
 \date{\today}
 
 % Set supervisors, use the titles according to the thesis language
-% in English Prof. or Dr., or in Finnish toht. or tri or FT, TkT, Ph.D. or in Swedish... 
-\supervisors{Nea Pirttinen}
-\examiners{Emilia Oikarinen}
+\supervisors{FM Nea Pirttinen}
+\examiners{TkT Emilia Oikarinen}
 
 \keywords{ketterä, ohjelmistokehitys, kehitysryhmä, hallinta, haasteet}
 \additionalinformation{\translate{\track}}
 
 %% Provide classification terms, to appear on the abstract page.
-%% Replace the classification terms below with the ones that match your work.
-%% ACM Digital library provides a taxonomy and a tool for classification
-%% in computer science. Use 1-3 paths, and use right arrows between the
-%% about three levels in the path; each path requires a new line.
-
 \classification{\protect{\ \\
-Software and its engineering $\rightarrow$ 
-Software creation and management \\ $\rightarrow$ 
-Software development process management $\rightarrow$  
-Software development methods \\ $\rightarrow$ 
-Agile software development
+    Software and its engineering $\rightarrow$ 
+    Software creation and management \\ $\rightarrow$ 
+    Software development process management $\rightarrow$  
+    Software development methods \\ $\rightarrow$ 
+    Agile software development
 }}
 
 %% If you want to quote someone special. You can comment this line out and there will be nothing on the document.
@@ -111,25 +96,24 @@ Agile software development
 
 
 %% OPTIONAL STEP: Set up properties and metadata for the pdf file that pdfLaTeX makes.
-%% Your name, work title, and keywords are recommended.
 \hypersetup{
-    unicode=true,           % to show non-Latin characters in Acrobat’s bookmarks
-    pdftoolbar=true,        % show Acrobat’s toolbar?
-    pdfmenubar=true,        % show Acrobat’s menu?
-    pdffitwindow=false,     % window fit to page when opened
-    pdfstartview={FitH},    % fits the width of the page to the window
-    pdftitle={},            % title
-    pdfauthor={},           % author
-    pdfsubject={},          % subject of the document
-    pdfcreator={},          % creator of the document
-    pdfproducer={pdfLaTeX}, % producer of the document
-    pdfkeywords={something} {something else}, % list of keywords for
-    pdfnewwindow=true,      % links in new window
-    colorlinks=true,        % false: boxed links; true: colored links
-    linkcolor=black,        % color of internal links
-    citecolor=black,        % color of links to bibliography
-    filecolor=magenta,      % color of file links
-    urlcolor=cyan           % color of external links
+    unicode=true,                                   % to show non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                                % show Acrobat’s toolbar?
+    pdfmenubar=true,                                % show Acrobat’s menu?
+    pdffitwindow=false,                             % window fit to page when opened
+    pdfstartview={FitH},                            % fits the width of the page to the window
+    pdftitle={Ketterän ohjelmistokehitysryhmän hallinnalliset haasteet},            % title
+    pdfauthor={Benjamin Blinnikka},                                                 % author
+    pdfsubject={Ketterän ohjelmistokehitysryhmän hallinnalliset haasteet},          % subject of the document
+    pdfcreator={Benjamin Blinnikka},                % creator of the document
+    pdfproducer={pdfLaTeX},                         % producer of the document
+    pdfkeywords={ketterä} {ohjelmistokehitys} {kehitysryhmä} {hallinta} {haasteet}, % list of keywords for
+    pdfnewwindow=true,                              % links in new window
+    colorlinks=true,                                % false: boxed links; true: colored links
+    linkcolor=black,                                % color of internal links
+    citecolor=black,                                % color of links to bibliography
+    filecolor=magenta,                              % color of file links
+    urlcolor=cyan                                   % color of external links
 }
 
 %%-----------------------------------------------------------------------------------
@@ -176,7 +160,7 @@ Agile software development
 \include{Ch.50_Yhteenveto}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\cleardoublepage                          %fixes the position of bibliography in bookmarks
+%\cleardoublepage                         % Fixes the position of bibliography in bookmarks
 %\phantomsection
 \addcontentsline{toc}{chapter}{\bibname}  % This lines adds the bibliography to the ToC
 \printbibliography
@@ -187,15 +171,9 @@ Agile software development
 
 %% A sample Appendix
 %% \include{Ch.90_Appendix_1}
-%% another appendix
-%% \include{instructions/instructions_english}
-%% yet another appendix
-%% \include{instructions/instructions_finnish}
 
 % BSc instructions
 %\include{instructions/bsc_finnish_contents}
-%\include{instructions/bsc_english_contents}
-
 
 \end{appendices}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
